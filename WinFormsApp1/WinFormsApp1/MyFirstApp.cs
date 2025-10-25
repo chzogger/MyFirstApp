@@ -11,5 +11,15 @@ namespace WinFormsApp1
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CmdHello_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

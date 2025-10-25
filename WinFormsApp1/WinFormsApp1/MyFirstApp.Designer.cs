@@ -1,4 +1,4 @@
-﻿namespace WinFormsApp1
+﻿﻿namespace WinFormsApp1
 {
     partial class MyFirstApp
     {
@@ -28,19 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
+            CmdHello = new Button();
+            LblDisplay = new Label();
             SuspendLayout();
             // 
-            // Form1
+            // CmdHello
+            // 
+            CmdHello.Location = new Point(37, 32);
+            CmdHello.Name = "CmdHello";
+            CmdHello.Size = new Size(147, 79);
+            CmdHello.TabIndex = 0;
+            CmdHello.Text = "Hello";
+            CmdHello.UseVisualStyleBackColor = true;
+            CmdHello.Click += CmdHello_Click;
+            // 
+            // LblDisplay
+            // 
+            LblDisplay.AutoSize = true;
+            LblDisplay.Location = new Point(470, 264);
+            LblDisplay.Name = "LblDisplay";
+            LblDisplay.Size = new Size(54, 32);
+            LblDisplay.TabIndex = 1;
+            LblDisplay.Text = "........";
+            LblDisplay.Click += label1_Click;
+            // 
+            // MyFirstApp
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Name = "Form1";
+            Controls.Add(LblDisplay);
+            Controls.Add(CmdHello);
+            Name = "MyFirstApp";
             Text = "MyFirstApp";
             Load += Form1_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button CmdHello;
+        private Label LblDisplay;
     }
 }
