@@ -19,7 +19,7 @@ namespace WinFormsApp1
 
         private void CmdHello_Click(object sender, EventArgs e)
         {
-
+            LblDisplay.Text = "Hello";
         }
     }
 }
