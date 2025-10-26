@@ -129,6 +129,7 @@
             CalculateButton.TabIndex = 8;
             CalculateButton.Text = "Berechne Dezimalwert";
             CalculateButton.UseVisualStyleBackColor = true;
+            CalculateButton.Click += CalculateButton_Click;
             // 
             // RefreshButton
             // 
