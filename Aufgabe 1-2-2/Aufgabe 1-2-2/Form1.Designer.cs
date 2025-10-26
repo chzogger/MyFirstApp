@@ -28,12 +28,97 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            label1 = new Label();
+            counter = new Label();
+            ResetButtom = new Button();
+            SuspendLayout();
+            // 
+            // button1
+            // 
+            button1.Location = new Point(61, 57);
+            button1.Name = "button1";
+            button1.Size = new Size(97, 50);
+            button1.TabIndex = 0;
+            button1.Text = "1er";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(197, 57);
+            button2.Name = "button2";
+            button2.Size = new Size(97, 50);
+            button2.TabIndex = 1;
+            button2.Text = "2er";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(339, 57);
+            button3.Name = "button3";
+            button3.Size = new Size(97, 50);
+            button3.TabIndex = 2;
+            button3.Text = "3er";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(83, 187);
+            label1.Name = "label1";
+            label1.Size = new Size(19, 32);
+            label1.TabIndex = 3;
+            label1.Text = ".";
+            // 
+            // counter
+            // 
+            counter.AutoSize = true;
+            counter.Location = new Point(66, 281);
+            counter.Name = "counter";
+            counter.Size = new Size(0, 32);
+            counter.TabIndex = 4;
+            // 
+            // ResetButtom
+            // 
+            ResetButtom.BackColor = Color.Red;
+            ResetButtom.FlatStyle = FlatStyle.Popup;
+            ResetButtom.Location = new Point(448, 218);
+            ResetButtom.Name = "ResetButtom";
+            ResetButtom.Size = new Size(153, 95);
+            ResetButtom.TabIndex = 5;
+            ResetButtom.Text = "Delete";
+            ResetButtom.UseVisualStyleBackColor = false;
+            ResetButtom.Click += ResetButtom_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(ResetButtom);
+            Controls.Add(counter);
+            Controls.Add(label1);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button button1;
+        private Button button2;
+        private Button button3;
+        private Label label1;
+        private Label counter;
+        private Button ResetButtom;
     }
 }
