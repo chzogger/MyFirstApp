@@ -20,11 +20,16 @@ namespace Aufgabe_1_2_5
 
         private void Zahlausgeben()
             
-        {    
+        {
 
-       
+            if (MeineZahl == 11111111)
+            { 
+            
+            }
+
+            
             BinaryNumber = Convert.ToString(Convert.ToInt32(MeineZahl.ToString(), 2));
-            textBox1.Text = "Dezimalzahl: " + BinaryNumber;
+            textBox1.Text = "Wert in Dezimalzahl: " + BinaryNumber;
 
 
         }

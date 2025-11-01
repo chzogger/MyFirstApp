@@ -148,7 +148,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(352, 39);
             textBox1.TabIndex = 11;
-            textBox1.Text = "Wert in Dezimal: ";
+            textBox1.Text = "Wert in Dezimalzahl: ";
             textBox1.TextChanged += textBox1_TextChanged;
             // 
             // Form1
